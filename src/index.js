@@ -4,12 +4,14 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Client from 'shopify-buy'
+import { BrowserRouter as Router } from 'react-router-dom'
+
 
 ReactDOM.render(
-  <React.StrictMode>
+  <Router>
     <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+    </Router>,
+document.getElementById('root')
 );
 
 const client = Client.buildClient({
