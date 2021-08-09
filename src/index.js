@@ -12,12 +12,21 @@ const client = Client.buildClient({
 
 ReactDOM.render(
   <Router>
-    <App client={client}/>
+    <App client = {Client} />
     </Router>,
 document.getElementById('root')
 );
 
-;
+const client = Client.buildClient({
+  storefrontAccessToken: '775f212258a0b29478371a6edbdab2d5',
+  domain: 'ecom-mock-up.myshopify.com'
+  });
+
+ 
+  client.product.fetchAll().then((products) => {
+    // Do something with the products
+    console.log(products);
+  });
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
