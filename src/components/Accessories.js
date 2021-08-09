@@ -1,7 +1,13 @@
-import React from 'react';
-import { connect } from 'react-redux'
-import {Link} from 'react-router-dom'
+import React, { Component } from 'react';
 
-class Accessories extends React.Component{
-
+class Accessories extends Component {
+    render() {
+        return (
+            <div>
+                
+            </div>
+        );
+    }
 }
+
+export default Accessories;
