@@ -5,7 +5,11 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Client from 'shopify-buy'
 import { BrowserRouter as Router } from 'react-router-dom'
+<<<<<<< HEAD
 import Navbar from './Navbar';
+=======
+
+>>>>>>> da2abe94267a6a167f82532a1f2453c969380d43
 const client = Client.buildClient({
   storefrontAccessToken: '775f212258a0b29478371a6edbdab2d5',
   domain: 'ecom-mock-up.myshopify.com'
