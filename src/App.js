@@ -3,7 +3,8 @@ import {Component} from 'react';
 import './App.css';
 import {Switch,Route} from "react-router-dom";
 import MainContainer from './containers/MainContainer';
-import Apparel from './containers/ApparelContainer'
+import Router from './Router';
+import { NavOptions } from './Navbar';
 
 
 class App extends Component {
@@ -13,14 +14,10 @@ class App extends Component {
   render() {
       return (
               <div>
-                  <br />
+                  <NavOptions />
+                  <Router />
                 
                     
-                      <Switch>
-                              <Route exact path="/"> <MainContainer/> </Route>
-                              <Route exact path="/apparel">< Apparel /> </Route>
-                            
-                      </Switch> 
               </div> 
       )
   }

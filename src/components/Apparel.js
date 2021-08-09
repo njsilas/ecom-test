@@ -4,7 +4,7 @@ class Apperal extends Component {
     render() {
         return (
             <div>
-                
+                <h1>apperal</h1>
             </div>
         );
     }
