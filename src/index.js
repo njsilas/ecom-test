@@ -9,7 +9,7 @@ import { BrowserRouter as Router } from 'react-router-dom'
 
 ReactDOM.render(
   <Router>
-    <App />
+    <App client = {Client} />
     </Router>,
 document.getElementById('root')
 );
@@ -17,6 +17,12 @@ document.getElementById('root')
 const client = Client.buildClient({
   storefrontAccessToken: '775f212258a0b29478371a6edbdab2d5',
   domain: 'ecom-mock-up.myshopify.com'
+  });
+
+ 
+  client.product.fetchAll().then((products) => {
+    // Do something with the products
+    console.log(products);
   });
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
