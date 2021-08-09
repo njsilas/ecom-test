@@ -6,6 +6,10 @@ import reportWebVitals from './reportWebVitals';
 import Client from 'shopify-buy'
 import { BrowserRouter as Router } from 'react-router-dom'
 
+const client = Client.buildClient({
+  storefrontAccessToken: '775f212258a0b29478371a6edbdab2d5',
+  domain: 'ecom-mock-up.myshopify.com'
+  })
 
 ReactDOM.render(
   <Router>
@@ -14,10 +18,7 @@ ReactDOM.render(
 document.getElementById('root')
 );
 
-const client = Client.buildClient({
-  storefrontAccessToken: '775f212258a0b29478371a6edbdab2d5',
-  domain: 'ecom-mock-up.myshopify.com'
-  });
+
 
  
   client.product.fetchAll().then((products) => {
