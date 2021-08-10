@@ -21,10 +21,14 @@ document.getElementById('root')
 
 
  
-  client.product.fetchAll().then((products) => {
+client.product.fetchAll().then((products) => {
     // Do something with the products
-    console.log(products);
+ 
+    console.log(products[0].productType
+      )
   });
+ 
+  
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
