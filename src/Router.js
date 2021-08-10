@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Switch, Route} from 'react-router-dom'
 import Home from './components/Home'
-import Apparel from './components/Apperal';
+import Apparel from './components/Apparel';
 import Accessories from './components/Accessories';
 class Router extends Component {
     render() {

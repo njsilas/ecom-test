@@ -10,7 +10,7 @@ export const NavOptions = () => {
                 exact>Home
                 </NavLink>
                 <NavLink
-                to="/apperal"
+                to="/apparel"
                 exact>Apperal
                 </NavLink>
                 <NavLink
