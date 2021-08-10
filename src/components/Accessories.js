@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 import React, { Component } from 'react';
 
+=======
+import { Component } from "react";
+>>>>>>> nick/main
 class Accessories extends Component {
     render() {
         return (

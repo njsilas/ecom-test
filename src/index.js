@@ -13,13 +13,14 @@ const client = Client.buildClient({
 
 ReactDOM.render(
   <Router>
-    <App client = {Client} />
+    <App client = {client} />
     </Router>,
 document.getElementById('root')
 );
 
 
 
+<<<<<<< HEAD
  
 client.product.fetchAll().then((products) => {
     // Do something with the products
@@ -29,6 +30,9 @@ client.product.fetchAll().then((products) => {
   });
  
   
+=======
+
+>>>>>>> nick/main
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
